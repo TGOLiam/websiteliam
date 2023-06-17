@@ -1,0 +1,79 @@
+@media screen and (max-width: 768px) {
+  section {
+    height: 90vh;
+    
+  }
+  
+  .black {
+    background-color: #090b25;
+    
+  }
+
+  .white {
+    background-color: rgb(5, 6, 20);
+    padding-bottom: 10vw;
+  }
+
+  .typing-container {
+    border: 1px solid transparent;
+    font-family: monospace;
+    width: 40vw;
+    height: 85vh;
+    position: absolute;
+    top: 50vh;
+    left: 24vw;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 13.3vw;
+  }
+
+  .typing-container #text{
+    white-space: pre-line;
+    line-height: 1.5
+  }
+
+  .clinton {
+    color: blue;
+    position: absolute;
+    top: 16vh;
+    left: 48vw;
+    font-family: Arial;
+    font-size: 2.5vw;
+  }
+
+  .project-gif {
+    position: relative;
+    top: 50vh;
+    left: 5vw;
+    width: 50vw;
+    height: 50vh;
+    opacity: 0;
+    transition: opacity 0.8s ease, top 0.8s ease;
+  }
+
+  .about-us-container {
+    font-size: 7vw;
+    width: 40vw;
+    left: 23.5vw;
+  }
+
+  .liam {
+    top: -12vh;
+    left: -2.1vw;
+    font-size: 4vw;
+  }
+
+  .paragraph-container {
+    width: 40vw;
+    top: 12vh;
+    left: 17.8vw;
+    font-size: 1.7vw;
+  }
+
+  .paragraph-container2 {
+    width: 40vw;
+    top: 1vh;
+    left: 50vw;
+    font-size: 2vw;
+  }
+}

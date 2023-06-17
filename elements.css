@@ -1,0 +1,441 @@
+/* CSS for the three sections */
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+  margin-top: 0;
+}
+
+.black {
+  background-color: #090b25;
+  
+}
+
+.white {
+  background-color: rgb(5, 6, 20);
+  
+}
+
+.typing-container {
+  border: 1px solid transparent;
+  padding: 10vh;
+  font-family: monospace;
+  width: 70vw;
+  height: 20vh;
+  position: absolute;
+  top: 20vh;
+  left: 40vw;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 9vw;
+}
+
+
+.about-us-container {
+  border: 1px solid transparent;
+  padding: 0;
+  width: 30vw;
+  height: 0vh;
+  position: relative;
+  top: 5.5vh;
+  left: 20vw;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 5vw;
+  font-weight: 500;
+  font-family: monospace;
+}
+
+.clinton {
+  color: blue;
+  position: absolute;
+  top: -5.8vw;
+  left: 75.5vw;
+  font-family: Arial;
+  font-size: 1.8vw;
+}
+
+.liam {
+  color: blue;
+  position: absolute;
+  top: -6vw;
+  left: -2.1vw;
+  font-family: Arial;
+  font-size: 1.8vw;
+}
+
+.paragraph-box {
+  position: relative;
+  left: 7vw;
+  top: 45vh;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease, top 0.8s ease;
+  text-align: start;
+}
+
+.paragraph-container {
+  border: 1px solid whitesmoke;
+  padding: 0;
+  width: 40vw;
+  height: 20vw;
+  position: relative;
+  top: 7vw;
+  left: 17.8vw;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.7vw;
+  font-weight: 500;
+  font-family: monospace;
+}
+
+.paragraph-container2 {
+  border: 1px solid whitesmoke;
+  padding: 0;
+  width: 40vw;
+  height: 20vw;
+  position: relative;
+  top: -13vw;
+  left: 68vw;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.7vw;
+  font-weight: 500;
+  font-family: monospace;
+}
+
+.project-welcome-container {
+  border: 1px solid transparent;
+  padding: 0;
+  width: 62vw;
+  height: 0vh;
+  position: relative;
+  top: 7vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 5vw;
+  font-weight: 500;
+  font-family: monospace;
+}
+
+.project-gif{
+  position: relative;
+  top: 50vh;
+  left: 5vw;
+  width: 550px;
+  height: 400px;
+  opacity: 0;
+  transition: opacity 0.8s ease, top 0.8s ease;
+  
+}
+
+.project-title-container{
+  border: 1px solid transparent;
+  padding: 0;
+  width: 50vw;
+  height: 0vh;
+  position: relative;
+  top: -25vh;
+  left: 70vw;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3vw;
+  font-weight: 500;
+  font-family: monospace;
+}
+
+.project-description-container{
+  border: 1px solid whitesmoke;
+  padding: 0;
+  width: 40vw;
+  height: 40vh;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.7vw;
+  font-weight: 500;
+  font-family: monospace;
+}
+
+
+
+
+.project-gif.fade-in{
+  opacity: 1;
+  top: 25vh;
+}
+
+
+
+.paragraph-box.fade-in {
+  opacity: 1;
+  top: 30vh;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+#text::after,
+#about-us::after,
+#paragraph::after,
+#project-welcome::after
+ {
+  content: "|";
+  display: inline;
+  animation: typing 1s infinite;
+}
+
+
+/*
+.typing-effect {
+  background-color: transparent;
+    padding: 20px;
+    font-family: monospace;
+    height: 100vh;
+    width: 46vw;
+    overflow: auto;
+    color: white;
+    position: relative;
+    top: 0vh;
+    left: 46vw;
+    font-size: 35px;
+    background-size: contain;
+    border: 1px black;
+    background-attachment: fixed;
+    
+}
+
+.typing-effect pre {
+  white-space: pre-wrap;
+  filter: blur(4px); 
+}
+
+.typing-effect .blink {
+  animation: blink-caret 0.75s step-end infinite;
+}
+*/
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+/*
+@media screen and (max-width: 900px){
+  
+  *,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  section {
+    height: 100vh;
+    margin-top: 0;
+  }
+
+  .black {
+    background-color: brown;
+  }
+
+  .white {
+    background-color: rgb(5, 6, 20);
+    padding-bottom: 10vw;
+  }
+
+  .typing-container {
+    border: 1px solid transparent;
+    padding: 10vh;
+    font-family: monospace;
+    width: 70vw;
+    height: 20vh;
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+    transform: translate(-50%, -50%);
+    color: yellow;
+    font-size: 9vw;
+  }
+
+  .about-us-container {
+    border: 1px solid transparent;
+    padding: 0;
+    width: 30vw;
+    height: 0vh;
+    position: relative;
+    top: 5.5vh;
+    left: 20vw;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5vw;
+    font-weight: 500;
+    font-family: monospace;
+  }
+
+  .clinton {
+    color: blue;
+    position: absolute;
+    top: 16vh;
+    left: 75.5vw;
+    font-family: Arial;
+    font-size: 25px;
+  }
+
+  .liam {
+    color: blue;
+    position: absolute;
+    top: -12vh;
+    left: -2.1vw;
+    font-family: Arial;
+    font-size: 25px;
+  }
+
+  .paragraph-box {
+    position: relative;
+    left: 7vw;
+    top: 45vh;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease, top 0.8s ease;
+    text-align: start;
+  }
+
+  .paragraph-container {
+    border: 1px solid whitesmoke;
+    padding: 0;
+    width: 40vw;
+    height: 40vh;
+    position: relative;
+    top: 12vh;
+    left: 17.8vw;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.7vw;
+    font-weight: 500;
+    font-family: monospace;
+  }
+
+  .paragraph-container2 {
+    border: 1px solid whitesmoke;
+    padding: 0;
+    width: 40vw;
+    height: 40vh;
+    position: relative;
+    top: 1vh;
+    left: 68vw;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.7vw;
+    font-weight: 500;
+    font-family: monospace;
+  }
+
+  .project-welcome-container {
+    border: 1px solid transparent;
+    padding: 0;
+    width: 62vw;
+    height: 0vh;
+    position: relative;
+    top: 7vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5vw;
+    font-weight: 500;
+    font-family: monospace;
+  }
+
+  .project-gif {
+    position: relative;
+    top: 50vh;
+    left: 5vw;
+    width: 550px;
+    height: 100px;
+    opacity: 0;
+    transition: opacity 0.8s ease, top 0.8s ease;
+  }
+
+  .project-title-container {
+    border: 1px solid transparent;
+    padding: 0;
+    width: 50vw;
+    height: 0vh;
+    position: relative;
+    top: -25vh;
+    left: 70vw;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3vw;
+    font-weight: 500;
+    font-family: monospace;
+  }
+
+  .project-description-container {
+    border: 1px solid whitesmoke;
+    padding: 0;
+    width: 40vw;
+    height: 40vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.7vw;
+    font-weight: 500;
+    font-family: monospace;
+  }
+
+  .project-gif.fade-in {
+    opacity: 1;
+    top: 25vh;
+  }
+
+  .paragraph-box.fade-in {
+    opacity: 1;
+    top: 30vh;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+
+  #text::after,
+  #about-us::after,
+  #paragraph::after,
+  #project-welcome::after {
+    content: "|";
+    display: inline;
+    animation: typing 1s infinite;
+  }
+}
+*/
+  
